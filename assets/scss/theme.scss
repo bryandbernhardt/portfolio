@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-display: swap;
+  src: url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');font-weight: 400, 600, 800;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: $background-color;
+  color: $text-color;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: $background-color-dark;
+    color: $text-color-dark;
+  }
+}
