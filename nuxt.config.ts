@@ -7,8 +7,10 @@ export default defineNuxtConfig({
     'nuxt-booster',
     '@nuxt/content',
     '@nuxtjs/fontaine',
-    '@nuxtjs/i18n'
+    '@nuxtjs/i18n',
+    '@nuxt/fonts'
   ],
+
   css: ['~/assets/scss/reset.scss','~/assets/scss/theme.scss'],
   site: {
     url: 'https://bryanbernhardt.com',
