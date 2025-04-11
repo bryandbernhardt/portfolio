@@ -1,3 +1,8 @@
 {
-  "BUILT_SITE": "This website was built with Nuxt 3 and self-hosted using Docker and CloudFire."
+  "FOOTER": "English - © Bryan Dietrich Bernhardt 2025",
+  "NAVBAR": {
+    "HOME": "Home",
+    "PROJECTS": "Projects",
+    "CONTACT": "Contact"
+  }
 }

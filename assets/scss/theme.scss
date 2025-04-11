@@ -1,6 +1,4 @@
-:root {
-  font-family: 'Open Sans';
-}
+@use './typography';
 
 body {
   background-color: $background-color;

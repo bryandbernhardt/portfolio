@@ -19,7 +19,7 @@ head:
 
 ¡Hola! Yo soy Bryan Dietrich Bernhardt, un desarrollador full stack con sólida experiencia en Node.js, Vue.js y Capacitor. Tengo un historial probado en la creación de soluciones integradas multiplataforma utilizadas a nivel mundial, entregadas en portugués, español e inglés. Mi especialidad es la integración de sistemas front-end y back-end, con un enfoque en el rendimiento y la escalabilidad.
 
-Escuela superior de análisis y desarrollo de sistemas en curso 9/10.<br>
+Educación superior en Análisis y Desarrollo de Sistemas desde 2025.<br>
 Técnico en electrónica desde 2018.
 
 ## Habilidades
