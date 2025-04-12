@@ -3,11 +3,64 @@
 body {
   background-color: $background-color;
   color: $text-color;
+
+  .header {
+    border-bottom: 1px solid $text-color;
+
+    .hamburger {
+      span {
+        background-color: $text-color;
+      }
+    }
+  }
+
+
+  .links-page {
+    p {
+      color: $links-description-color;
+    }
+
+    button {
+      color: $text-color;
+      background-color: $links-button-color;
+    }
+
+    .social-media-link svg {
+      display: block;
+      fill: $text-color;
+      transition: transform 0.2s ease, fill 0.2s ease;
+    }
+  }
 }
 
 @media (prefers-color-scheme: dark) {
   body {
     background-color: $background-color-dark;
     color: $text-color-dark;
+
+    .header {
+      border-bottom: 1px solid $text-color-dark;
+
+      .hamburger {
+        span {
+          background-color: $text-color-dark;
+        }
+      }
+    }
+
+    .links-page {
+      p {
+        color: $links-description-color-dark;
+      }
+
+      button {
+        color: $text-color-dark;
+        background-color: $links-button-color-dark;
+      }
+
+      .social-media-link svg {
+        fill: $text-color-dark;
+      }
+    }
   }
 }

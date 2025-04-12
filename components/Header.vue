@@ -1,11 +1,20 @@
 <script setup>
+import { useRoute } from 'vue-router'
+import { ref, watch } from 'vue'
 const localePath = useLocalePath()
+
+const toggleHamburguer = ref(null)
+const route = useRoute()
+
+watch(() => route.fullPath, () => {
+  if (toggleHamburguer.value) toggleHamburguer.value.checked = false
+})
 </script>
 
 <template>
   <header class="header">
     <div class="navbar">
-      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" ref="toggleHamburguer" />
       
       <label for="menu-toggle" class="hamburger">
         <span></span>
@@ -15,6 +24,7 @@ const localePath = useLocalePath()
 
       <nav class="menu">
         <NuxtLink :to="localePath('/')">{{ $t('NAVBAR.HOME') }}</NuxtLink>
+        <NuxtLink :to="localePath('/links')">{{ $t('NAVBAR.LINKS') }}</NuxtLink>
       </nav>
     </div>
   </header>
@@ -25,7 +35,6 @@ const localePath = useLocalePath()
   width: 100%;
   height: 3rem;
   padding: 1rem 2rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   display: flex;
   justify-content: center;
 
@@ -50,7 +59,6 @@ const localePath = useLocalePath()
       span {
         width: 25px;
         height: 3px;
-        background-color: white;
         border-radius: 2px;
         transition: all 0.3s ease;
       }
@@ -62,12 +70,11 @@ const localePath = useLocalePath()
       gap: 2rem;
 
       a {
-        color: white;
         text-decoration: none;
         font-size: 1rem;
 
         &:hover {
-          color: #ccc;
+          filter: opacity(0.8);
         }
       }
     }
@@ -116,7 +123,7 @@ const localePath = useLocalePath()
       .menu-toggle:checked ~ .menu {
         opacity: 1;
         visibility: visible;
-        background-color: rgba(0, 0, 0, 0.6);
+        // background-color: rgba(0, 0, 0, 0.6);
         backdrop-filter: blur(8px);
       }
     }
