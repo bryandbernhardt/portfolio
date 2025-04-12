@@ -8,7 +8,8 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@nuxtjs/fontaine',
     '@nuxtjs/i18n',
-    '@nuxt/fonts'
+    '@nuxt/fonts',
+    '@nuxt/image'
   ],
 
   css: ['~/assets/scss/reset.scss','~/assets/scss/theme.scss'],

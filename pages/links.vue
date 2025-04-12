@@ -1,6 +1,13 @@
 <template>
   <div class="links-page">
-    <img src="https://media.licdn.com/dms/image/v2/D4D03AQG8nd4F25v9Pw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1727240763566?e=1749686400&v=beta&t=8v9SJehHZHPO4Z-NI3DWAUl3vTw13TAIh5H8zRGyFBo" alt="Bryan Dietrich Bernhardt">
+    <NuxtImg
+      class="profile-image"
+      src="profile-photo.webp"
+      alt="Bryan Dietrich Bernhardt"
+      format="webp"
+      loading="lazy"
+      placeholder
+    />
     <h1>Bryan Dietrich Bernhardt</h1>
     <p>is an investor, electronics technician, <br>analyst/systems developer.. hacker?🤷‍♂️</p>
     <div class="social-medias">
@@ -83,7 +90,7 @@
     font-size: 1rem;
   }
 
-  img {
+  .profile-image {
     width: 150px;
     height: 150px;
     object-fit: cover;
